@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers Page</title>
+    <link rel="stylesheet" href="./css/seller.css">
+    <script src="seller.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-green-50 flex-1">
+    <section id="hero">
+       
+        <div class="container max-w-max bg-green-100  px-12 py-8 md:px-14 shadow">
+           
+           <nav class="flex items-center gap-7 justify-between  text-white">
+        
+            <img src="./resources/E-Mandi-logos (1).jpeg" class="h-20 m-2 shadow-md" alt="">
+         
+            
+                <div class="flex" >
+                    <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                    
+                    
+                    <div class="relative w-full">
+                        <input type="search" id="search-dropdown" class="block p-2.5 w-96 z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-green-50 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-black dark:text-black dark:focus:border-blue-500" placeholder="Search " required>
+                        <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white rounded-r-lg border border-green-700 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-700 dark:green:bg-blue-700 dark:focus:ring-green-800" >
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            
+                <div class="group">
+                    <a class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="index.html">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        Buy
+                    </a>
+                </div>
+                <div class="relative inline-block">
+                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown" class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="#">
+                        <i class="fa-solid fa-language"></i>
+                        Translate
+                    </button>
+    
+                    <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-32 dark:bg-gray-700 absolute top-12">
+                        <div id="google_translate_element"></div>
+                            <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,hi,mr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                            }
+                            </script>
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
+                     
+                            <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                 function googleTranslateElementInit() {
+                                 new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,hi,mr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                                }
+                            </script>
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                        
+                        </ul>
+                    </div>
+                    </div>
+                        
+                <div class="group">
+                    <a class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="myorder.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        My orders
+                    </a>
+                </div>
+                <div class="group" id="scrollButton">
+                    <a class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="#">
+                
+                        Get news
+                    </a>
+                </div>
+
+                <div class="relative inline-block">
+                
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-green-50 hover:bg-green-100 border-gray-400 border-2 focus:ring-4 focus:outline-none focus:ring-green-500 font-medium w-10 h-10 rounded-full text-sm inline-flex items-center justify-center dark:hover:bg-green-100 dark:hover:border-green-700 dark:focus:ring-green-500" type="button">
+                    <i class="fa-solid fa-user text-green-900"></i>
+                </button>
+                
+                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-32 dark:bg-gray-700 absolute top-12">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                      <li>
+                        <a href="signin.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign in</a>
+                      </li>
+                      <li>
+                        <a href="myorder.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My orders</a>
+                      </li>
+                      <li>
+                        <a href="myprofile.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My profile</a>
+                      </li>
+                      
+                    </ul>
+                </div>
+                </div>
+            </div>
+           </nav> 
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="relative">
+        <div class=" px-20 py-10 sm:px-6 lg:px-8 md:py-14 lg:py-20 mx-auto">
+          
+  
+          <div class="hidden lg:block sticky top-0 left-0 py-2 bg-green-100 border-2 border-green-900 backdrop-blur-md dark:bg-green-100">
+            
+            <div class="grid grid-cols-2 gap-6 w-1/2 mx-auto">
+              <div class="col-span-1">
+                <span class="font-semibold p-32 text-lg text-gray-800 dark:text-green-900">
+                    <ul>
+                        <h2>Step 1: Register yourself and List your products</h2>
+                        <li>Register your business for free and create a product catalogue</li>
+                        <li>Sell under your own private label or sell an existing brand</li>
+                        <li>Get self-serve training Order Packaging material from our website to start selling</li>
+                    </ul>
+                  
+                </span>
+              </div>
+              <div class="col-span-1">
+                <span class="font-semibold text-lg w-8 ml-16  text-gray-800 dark:text-gray-200">
+                  <img src="./resources/step1.jpg" alt="" >
+                </span>
+                
+              </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="relative">
+            <div class=" px-20 py-10 sm:px-6 lg:px-8 md:py-14 lg:py-20 mx-auto">
+              
+      
+              <div class="hidden lg:block sticky top-0 left-0 py-2 bg-green-100 border-2 border-green-900 backdrop-blur-md dark:bg-green-100">
+
+                <div class="grid grid-cols-2 gap-6 w-1/2 mx-auto">
+
+                    <div class="col-span-1">
+                        <span class="font-semibold text-lg w-8 ml-16  text-gray-800 dark:text-gray-200">
+                          <img src="./resources/step2.jpg" alt="" >
+                        </span>
+                        
+                      </div>
+                  <div class="col-span-1">
+                    <span class="font-semibold p-32 text-lg text-gray-800 dark:text-green-900">
+                        <ul>
+                            <h2>Step 2: Get support from professional service provider</h2>
+                            <li>Get your documentation & cataloging done with ease from our Professional Services network across India
+                            </li>
+                            <li>Increase your product visibility with high-quality product photo-shoot by our Partnered Photographers
+                            </li>
+                        </ul>
+                      
+                    </span>
+                  </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        
+    <br>
+    <br>
+    <br>
+
+    <div class="relative">
+        <div class=" px-20 py-10 sm:px-6 lg:px-8 md:py-14 lg:py-20 mx-auto">
+          
+  
+
+          <div class="hidden lg:block sticky top-0 left-0 py-2 bg-green-100 border-2 border-green-900 backdrop-blur-md dark:bg-green-100">
+
+            <div class="grid grid-cols-2 gap-6 w-1/2 mx-auto">
+              <div class="col-span-1">
+                <span class="font-semibold p-32 text-lg text-gray-800 dark:text-green-900">
+                    <ul>
+                        <h2>Step 3: Receive orders & Schedule a pickup</h2>
+                        <li>Once listed, your products will be available to millions of users across India</li>
+                        <li>Get orders and manage your online business via our Seller Panel and Seller Zone Mobile App</li>
+                    </ul>
+                  
+                </span>
+              </div>
+  
+              <div class="col-span-1">
+                <span class="font-semibold text-lg w-8 ml-16  text-gray-800 dark:text-gray-200">
+                  <img src="./resources/step1.jpg" alt="" >
+                </span>
+                
+              </div>
+              
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="relative">
+            <div class=" px-20 py-10 sm:px-6 lg:px-8 md:py-14 lg:py-20 mx-auto">
+              
+      
+              <!-- Header -->
+              <div class="hidden lg:block sticky top-0 left-0 py-2 bg-green-100 border-2 border-green-900 backdrop-blur-md dark:bg-green-100">
+                <!-- Grid -->
+                <div class="grid grid-cols-2 gap-6 w-1/2 mx-auto">
+
+                    <div class="col-span-1">
+                        <span class="font-semibold text-lg w-8 ml-16  text-gray-800 dark:text-gray-200">
+                          <img src="./resources/step2.jpg" alt="" >
+                        </span>
+                        
+                      </div>
+                  <div class="col-span-1">
+                    <span class="font-semibold p-32 text-lg text-gray-800 dark:text-green-900">
+                        <ul>
+                            <h2>Step 4: Receive quick payment & grow your business</h2>
+                            <li>Receive quick and hassle-free payments in your account once your orders are fulfilled</li>
+                            <li>Expand your business with low interest & collateral-free loans</li>
+                            <li>Start your business with Snapdeal & reach customers across India</li>
+                        </ul>
+                      
+                    </span>
+                  </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="button-container">
+                <a href="#add-product" class="sell-button">START SELLING NOW</a>
+            </div>        
+    <br>
+    <br>
+    <br>
+    <div class="add-product-container" id="add-product">
+        <h2 class="font-bold text-green-900 text-center text-4xl">Add Product</h2>
+        <br>
+        <div class="border-2 p-2 border-green-900">
+            <form class="add-product-form" action="#" method="post" class="max-w-5xl">
+                <ul>
+                    <li><input class="bg-green-100 w-16 text-2xl text-green-900" type="text" name="product_name" placeholder="Product Name:" required></li>
+                    <br>
+                    <li><input class="bg-green-50 w-16 text-2xl text-green-900" type="number" name="quantity" placeholder="Quantity:" required></li>
+                    <br>
+                    <li><input class="bg-green-100 w-16 text-2xl text-green-900" type="text" name="product_price" placeholder="Product Price in Rs:" required></li>
+                    <br>
+                    <li>
+                        <input class="text-center" type="file" name="product_image" id="productImage" accept="image/*" required>
+                       
+                        <div class="mt-2 relative">
+                            <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px; display: none;">
+                            <button id="removeImage" class="absolute top-2 right-2 bg-red-700 text-red-700 p-2 rounded-full cursor-pointer" style="display: none;">&times;</button>
+                        </div>
+                    </li>
+                    <li>
+                        <br>
+                        <br>
+                      
+                        <div id="success-message" class="hidden text-green-900 font-bold">Product added successfully!</div>
+
+
+                        <div class="flex justify-center"> 
+                            <button type="submit" class="bg-green-100 p-2 border-2"><a href="seller.html">Submit</a></button>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    
+    <div class="contofcont">
+        <div class="info-container">
+
+
+            <div class="infobar">
+                <button class="infobutton" onclick="shownews()">NEWS</button>
+                <button class="infobutton" onclick="showscheme()">Schemes</button>
+                <button class="infobutton" onclick="showloan()">Loans</button>
+            </div>
+
+
+            <div class="info">
+
+                <div id="news-list" class="lol">
+                    <div>
+                        <h1>NEWS UPDATES : </h1>
+                    </div>
+                    <div>
+                        <ul><h3>
+                            <li><a href="https://www.agriculture.com/dry-start-to-growing-season-didn-t-hurt-yields-for-some-tennessee-and-indiana-farmers-8383656" target="_blank"> Dry start to growing season didn’t hurt yields for some
+                                    Tennessee and Indiana farmers</a></li>
+                            <li><a href="https://www.agriculture.com/farmers-and-environmental-health-advocates-call-for-state-and-national-action-on-pfas-8383580" target="_blank"> Farmers and environmental health advocates call for state
+                                    and national action on PFAS</a></li>
+                            <li><a href="https://www.agriculture.com/usda-report-finds-barriers-to-farmers-in-carbon-markets-8374384" target="_blank"> USDA report finds barriers to farmers in carbon
+                                    markets</a></li>
+                            <li><a href="https://timesofindia.indiatimes.com/india/chhattisgarh-assembly-elections-bhupesh-baghel-promises-loan-waiver-for-farmers-if-congress-retains-power/articleshow/104651166.cms" target="_blank"> Chhattisgarh assembly elections: Bhupesh Baghel promises
+                                    loan waiver for farmers if Congress retains power</a></li>
+                                </h3></ul>
+                    </div>
+                </div>
+                <div id="scheme-list" class="lol">
+                    <div>
+                        <h1>GOVT. SCHEMES : </h1>
+                    </div>
+                    <ul><h3>
+                        <li ><a href="https://www.myscheme.gov.in/schemes/pmkmy">Pradhan Mantri Kisan Maan Dhan Yojana</a></li>
+                        <li><a href="https://www.myscheme.gov.in/schemes/kcc">Kisan Credit Card</a></li>
+                        <li><a href="https://mahadbt.maharashtra.gov.in/Farmer/Login/Login">Mahadbt Login and process</a></li>
+                        <!-- <li><a href="">s3</a></li> -->
+                    </h3></ul>
+                </div>
+                <!-- loan -->
+                <div id="loan-list" class="lol">
+                    <div>
+                        <h1>LOAN INFO. : </h1>
+                    </div>
+                    <ul><h3>
+                        <li><a href="https://sbi.co.in/web/agri-rural/agri-rural/agriculture-banking/kisan-samriddhi-rin">Kisan Samriddhi Rin</a></li>
+                        <li><a href="https://www.bankbazaar.com/personal-loan/tractor-loan.html">Tractor Loan</a></li>
+                        <li><a href="https://pib.gov.in/newsite/PrintRelease.aspx?relid=200815">Press Information Bureau Government of India Ministry of Agriculture & Farmers Welfare</a></li>
+                    </h3></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const addProductForm = document.querySelector(".add-product-form");
+  const successMessage = document.getElementById("success-message");
+
+  addProductForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    successMessage.classList.remove("hidden");
+    addProductForm.reset();
+    setTimeout(function () {
+      successMessage.classList.add("hidden");
+    }, 5000); // Hide the message after 5 seconds (5000 milliseconds)
+  });
+});
+</script>
+<script>
+    document.getElementById('scrollButton').addEventListener('click', function() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
+</script>
+<script>
+    const dropdownButton = document.getElementById("dropdownDefaultButton");
+    const dropdownMenu = document.getElementById("dropdown");
+  
+    dropdownButton.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  
+    document.addEventListener("click", function (event) {
+      if (!dropdownButton.contains(event.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+</script> 
+    
+<script>
+    const productImage = document.getElementById('productImage');
+    const imagePreview = document.getElementById('imagePreview');
+    const removeImage = document.getElementById('removeImage');
+    productImage.addEventListener('change', function () {
+        const file = productImage.files[0];
+    
+        if (file) {
+            imagePreview.style.display = 'block';
+            imagePreview.src = URL.createObjectURL(file);
+            removeImage.style.display = 'block';
+        } else {
+            imagePreview.style.display = 'none';
+            imagePreview.src = '';
+            removeImage.style.display = 'none';
+        }
+    });
+    removeImage.addEventListener('click', function () {
+        productImage.value = ''; 
+        imagePreview.style.display = 'none';
+        imagePreview.src = '';
+        removeImage.style.display = 'none';
+    });
+</script>
+<script>
+    const dropdownButton2 = document.getElementById("dropdownDefaultButton2");
+    const dropdownMenu2 = document.getElementById("dropdown2");
+  
+    dropdownButton2.addEventListener("click", function () {
+      dropdownMenu2.classList.toggle("hidden");
+    });
+    document.addEventListener("click", function (event) {
+      if (!dropdownButton2.contains(event.target)) {
+        dropdownMenu2.classList.add("hidden");
+      }
+    });
+</script>  
+</body>
+
+</html>

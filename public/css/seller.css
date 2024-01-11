@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: contain;
+    background-color: #f0f0f0; 
+}
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+   
+}
+.step2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    margin: 3.5rem;
+    margin-right: 12rem;
+}
+.step img {
+    margin-right: auto;
+}
+.step2 img {
+    margin-left: auto; 
+}
+#simg1{
+    background-image: url('./resources/step1.jpg ');
+    background-size: cover;
+    height: 9rem;
+    width: 16rem;
+}
+#simg2{
+    background-image: url('./resources/step2.jpg ');
+    background-size: cover;
+    height: 9rem;
+    width: 16rem;
+}
+#simg3{
+    background-image: url('./resources/step3.jpg ');
+    background-size: cover;
+    height: 10rem;
+    width: 16rem;
+}
+#simg4{
+    background-image: url('./resources/step4.png');
+    background-size: cover;
+    height: 12rem;
+    width: 16rem;
+}
+ul li{
+    text-align: left;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.sell-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filee{
+    display: flex;
+    width:  13.45rem;
+    border: 0.1rem solid grey;
+    height: 2rem;
+    margin: 0 0;
+    margin-top: 0.5rem ;
+    margin-bottom: 0.9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.info-container{
+    height: 550px;
+    width: 850px;
+    background-color: black;
+    margin-top:2rem;
+    overflow-y: auto;
+}
+.infobar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+}
+.infobar button{
+    background-color: rgba(0,0 ,0, 1);
+    color: white;
+    border: none;
+    font-size: large;
+}
+.infobar button:active{
+    border-bottom: 2.5px solid white;
+}
+.infobar button:hover{
+    border-bottom: 2.5px solid white;
+}
+
+.info{
+    border-top: 2px solid grey;
+}
+
+
+#news-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+#scheme-list{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+#loan-list{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+
+#news-list ul li{
+    margin: 3rem 0;
+}
+#scheme-list ul li{
+    margin: 3rem 0;
+}
+#loan-list ul li{
+    margin: 3rem 0;
+}
+a{
+    text-decoration: underline;
+    color: whitesmoke;
+}

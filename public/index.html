@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-MANDI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body class="bg-green-50 flex-1">
+    <section id="hero">
+        <div class="container max-w-max bg-green-100  px-12 py-8 md:px-14 shadow">
+           <nav class="flex items-center gap-7 justify-between  text-white">
+            <img src="./resources/E-Mandi-logos (1).jpeg" class="h-20 m-2 shadow-md" alt="">
+            <form>
+                <div class="flex" >
+                    <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                    
+                    
+                    <div class="relative w-full">
+                        <input type="search" id="search-dropdown" class="block p-2.5 w-96 z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-green-50 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-black dark:text-black dark:focus:border-blue-500" placeholder="Search " required>
+                        <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white rounded-r-lg border border-green-700 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-700 dark:green:bg-blue-700 dark:focus:ring-green-800" >
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form> 
+                <div class="group">
+                    <a class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="seller.html">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        Sell
+                    </a>
+                </div>
+                <div class="relative inline-block">
+                    <button id="dropdownDefaultButton2" data-dropdown-toggle="dropdown" class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="#">
+                        <i class="fa-solid fa-language"></i>
+                        Translate
+                    </button>
+
+              
+                    <div id="dropdown2" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-32 dark:bg-gray-700 absolute top-12">
+                        <div id="google_translate_element"></div>
+                            <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,hi,mr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                            }
+                            </script>
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton2">
+                            <!-- Paste the Google Translate code snippet here -->
+                            <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                 function googleTranslateElementInit() {
+                                 new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,hi,mr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                                }
+                            </script>
+                        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                        
+                        </ul>
+                    </div>
+                    </div>
+
+                    
+                    <script>
+                        const dropdownButton2 = document.getElementById("dropdownDefaultButton2");
+                        const dropdownMenu2 = document.getElementById("dropdown2");
+                      
+                        dropdownButton2.addEventListener("click", function () {
+                          dropdownMenu2.classList.toggle("hidden");
+                        });
+                      
+                        // Close the dropdown when clicking outside of it
+                        document.addEventListener("click", function (event) {
+                          if (!dropdownButton2.contains(event.target)) {
+                            dropdownMenu2.classList.add("hidden");
+                          }
+                        });
+                    </script>
+    
+                <div class="group">
+                    <a class=" inline-flex justify-center items-center w-40 gap-2  border-2 border-gray-400 bg-green-50 text-black font-semibold rounded-md hover:shadow-lg hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all text-lg py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="mybasket.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Basket
+                    </a>
+                </div>
+
+                <div class="relative inline-block">
+                
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-green-50 hover:bg-green-100 border-gray-400 border-2 focus:ring-4 focus:outline-none focus:ring-green-500 font-medium w-10 h-10 rounded-full text-sm inline-flex items-center justify-center dark:hover:bg-green-100 dark:hover:border-green-700 dark:focus:ring-green-500" type="button">
+                    <i class="fa-solid fa-user text-green-900"></i>
+                </button>
+                
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-32 dark:bg-gray-700 absolute top-12">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                      <li>
+                        <a href="signin.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign in</a>
+                      </li>
+                      <li>
+                        <a href="myorder.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My orders</a>
+                      </li>
+                      <li>
+                        <a href="myprofile.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My profile</a>
+                      </li>
+                      
+                    </ul>
+                </div>
+                </div>
+                
+                <script>
+                    const dropdownButton = document.getElementById("dropdownDefaultButton");
+                    const dropdownMenu = document.getElementById("dropdown");
+                  
+                    dropdownButton.addEventListener("click", function () {
+                      dropdownMenu.classList.toggle("hidden");
+                    });
+                  
+                    // Close the dropdown when clicking outside of it
+                    document.addEventListener("click", function (event) {
+                      if (!dropdownButton.contains(event.target)) {
+                        dropdownMenu.classList.add("hidden");
+                      }
+                    });
+                </script>
+
+<div class="total">  <p class="bg-green-50 border-2 border-gray-400 p-3 rounded-md text-green-900 border-spacing-1 "> Total Items in Basket : <span id="cart-total">0</span></p></div>
+                
+  
+
+        
+            </div>
+           </nav> 
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+
+    <section>
+        <h2 class=" tracking-tight mt-10 mb-6 font-sans lg:text-5xl font-bold text-center text-green-900  md:text-5xl md:mt-0 md:text-center">
+            Shop by category
+        </h2>
+    </section>
+
+    
+    <div class="relative">
+        <div class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 md:py-14 lg:py-20 mx-auto">
+          <div class="hidden lg:block sticky top-0 left-0 py-2 bg-white/60 backdrop-blur-md dark:bg-slate-50">
+            <!-- Grid -->
+            <div class="grid grid-cols-4 gap-6">
+
+                <a href="#">  
+                    <div class="col-span-1 ">
+                      <h2 class=" text-4xl font-bold lg:text-center text-gray-800 dark:text-green-900">
+                        <button id="allButton">All</button>
+                      </h2>
+                      <br>
+                      <br>
+                      <img src="./resources/all.jpeg" class="hover:shadow-2xl hover:shadow-slate-500 w-full h-80" alt="" id="allButton">
+                    </div>
+                
+              <a href="#">  
+              <div class="col-span-1 ">
+                <h2 class=" text-4xl font-bold lg:text-center text-gray-800 dark:text-green-900">
+                    <button id="vegetableButton">Vegetables</button>
+                </h2>
+                <br>
+                <br>
+                <img src="./resources/vegetable.jpeg" class="hover:shadow-2xl hover:shadow-slate-500 w-full h-80" alt="" id="vegetableButton">
+              </div>
+              </a>
+              <!-- End Col -->
+  
+              <a href="#">  
+                <div class="col-span-1 ">
+                  <h2 class=" text-4xl font-bold lg:text-center text-gray-800 dark:text-green-900">
+                    <button id="fruitButton">Fruits</button>
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="./resources/fruits.jpeg" class="hover:shadow-2xl hover:shadow-slate-500 w-full h-80" alt="">
+                </div>
+                </a>
+              <!-- End Col -->
+  
+              <a href="#">  
+                <div class="col-span-1 ">
+                  <h2 class=" text-4xl font-bold lg:text-center text-gray-800 dark:text-green-900">
+                    <button id="pulsesButton">Pulses</button>
+                  </h2>
+                  <br>
+                  <br>
+                  <img src="./resources/pulses.jpeg" class="hover:shadow-2xl hover:shadow-slate-500 w-full h-80" alt="">
+                </div>
+                </a>
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        </div>
+            </div>  
+            </div>
+            </div>
+
+              </div>
+              <section>
+                <h2 class=" tracking-tight mt-10 mb-6 font-sans lg:text-5xl font-bold text-center text-green-900  md:text-5xl md:mt-0 md:text-center">
+                    Products
+                </h2>
+            </section>
+              <div class="container">
+                <div class="card" style="--clr:#009688; " data-category="fruit">
+                    <div class="imgBX">
+                        <img src="./Fruits/Apple.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Apple</h2>
+                        <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                            Quantity-2kg
+                        </p><br>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <span class="count">0</span>
+                            <button class="increment">+</button>
+                        </div>
+                        <a href="buynow.html">Buy Now</a>
+                    </div> 
+                </div>
+                <div class="card" style="--clr:#babd0b; "  data-category="vegetable" >
+                    <div class="imgBX">
+                        <img src="./Vegetable/Bell Pappers.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Bell Pappers</h2>
+                        <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                            Quantity-1kg
+                        </p><br>
+                        <div class="counter">
+                            <button class="decrement">-</button>
+                            <span class="count">0</span>
+                            <button class="increment">+</button>
+                        </div>
+                        <a href="buynow.html">Buy Now</a>
+                    </div> 
+                </div>
+                <div class="card" style="--clr:#8027a6; " data-category="fruit">
+                    <div class="imgBX">
+                        <img src="./Fruits/Avocado.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Avocado</h2>
+                        <p>Price-Rs 50/Kg <p class="cut-text">Rs 80/kg</p>
+                            Quantity-1.5kg
+                        </p><br>
+                            <div class="counter">
+                            <button class="decrement">-</button>
+                            <span class="count">0</span>
+                            <button class="increment">+</button>
+                        </div>
+                        <a href="buynow.html">Buy Now</a>
+        
+                    </div> 
+                </div>  
+            </div>
+
+            <div class="container">
+              <div class="card" style="--clr:#009688; " data-category="vegetable">
+                  <div class="imgBX">
+                      <img src="./Vegetable/Cabbage.jpg">
+                  </div>
+                  <div class="content">
+                      <h2>Cabbage</h2>
+                      <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                          Quantity-2kg
+                      </p><br>
+                      <div class="counter">
+                          <button class="decrement">-</button>
+                          <span class="count">0</span>
+                          <button class="increment">+</button>
+                      </div>
+                      <a href="buynow.html">Buy Now</a>
+                  </div> 
+              </div>
+              <div class="card" style="--clr:#babd0b; " data-category="fruit">
+                  <div class="imgBX">
+                      <img src="./Fruits/Banana.jpeg">
+                  </div>
+                  <div class="content">
+                      <h2>Bannana</h2>
+                      <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                          Quantity-1kg
+                      </p><br>
+                      <div class="counter">
+                          <button class="decrement">-</button>
+                          <span class="count">0</span>
+                          <button class="increment">+</button>
+                      </div>
+                      <a href="buynow.html">Buy Now</a>
+                  </div> 
+              </div>
+              <div class="card" style="--clr:#8027a6; ">
+                  <div class="imgBX">
+                      <img src="./Vegetable/carrot.jpeg"  data-category="vegetable">
+                  </div>
+                  <div class="content">
+                      <h2>Carrot</h2>
+                      <p>Price-Rs 50/Kg <p class="cut-text">Rs 80/kg</p>
+                          Quantity-1.5kg
+                      </p><br>
+                          <div class="counter">
+                          <button class="decrement">-</button>
+                          <span class="count">0</span>
+                          <button class="increment">+</button>
+                      </div>
+                      <a href="buynow.html">Buy Now</a>
+      
+                  </div> 
+              </div>  
+          </div>
+          <div class="container">
+            <div class="card" style="--clr:#009688; "  data-category="fruit">
+                <div class="imgBX">
+                    <img src="./Fruits/Cherry.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Cherry</h2>
+                    <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-2kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#babd0b; " data-category="vegetable">
+                <div class="imgBX">
+                    <img src="./Vegetable/Collard-Greens.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Collard-Greens</h2>
+                    <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-1kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#8027a6; " data-category="fruit">
+                <div class="imgBX">
+                    <img src="./Fruits/Coconut.jpg">
+                </div>
+                <div class="content">
+                    <h2>Coconut</h2>
+                    <p>Price-Rs 50/Kg <p class="cut-text">Rs 80/kg</p>
+                        Quantity-1.5kg
+                    </p><br>
+                        <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+    
+                </div> 
+            </div>  
+        </div>
+        <div class="container">
+            <div class="card" style="--clr:#009688; ">
+                <div class="imgBX">
+                    <img src="./Vegetable/Garlic.jpeg" data-category="vegetable">
+                </div>
+                <div class="content">
+                    <h2>Garlic</h2>
+                    <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-2kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="#">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#babd0b; " data-category="fruit">
+                <div class="imgBX">
+                    <img src="./Fruits/Grapes.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Grapes</h2>
+                    <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-1kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#8027a6; ">
+                <div class="imgBX">
+                    <img src="./Vegetable/Mushroom.jpeg" data-category="vegetable">
+                </div>
+                <div class="content">
+                    <h2>Mushroom</h2>
+                    <p>Price-Rs 50/Kg <p class="cut-text">Rs 80/kg</p>
+                        Quantity-1.5kg
+                    </p><br>
+                        <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+    
+                </div> 
+            </div>  
+        </div>
+        <div class="container">
+            <div class="card" style="--clr:#009688; " data-category="fruit">
+                <div class="imgBX">
+                    <img src="./Fruits/Orange.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Orange</h2>
+                    <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-2kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#babd0b; "  data-category="pulses">
+                <div class="imgBX">
+                    <img src="./pulses/Black-Gram.jpg">
+                </div>
+                <div class="content">
+                    <h2>Black-Gram</h2>
+                    <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-1kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#8027a6; " data-category="pulses">
+                <div class="imgBX">
+                    <img src="./pulses/Green-gram.jpg">
+                </div>
+                <div class="content">
+                    <h2>Green-gram</h2>
+                    <p>Price-Rs 50/Kg <p class="cut-text">Rs 80/kg</p>
+                        Quantity-1.5kg
+                    </p><br>
+                        <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+    
+                </div> 
+            </div>  
+        </div>
+        <div class="container">
+            <div class="card" style="--clr:#009688; " data-category="pulses">
+                <div class="imgBX">
+                    <img src="./pulses/Horse-Gram.jpg">
+                </div>
+                <div class="content">
+                    <h2>Horse-Gram</h2>
+                    <p>Price-Rs 150/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-2kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+            <div class="card" style="--clr:#babd0b; " data-category="pulses">
+                <div class="imgBX">
+                    <img src="./pulses/Red-lentils.jpg">
+                </div>
+                <div class="content">
+                    <h2>Red-lentils</h2>
+                    <p>Price-Rs 100/Kg <p class="cut-text">Rs 200/kg</p>
+                        Quantity-1kg
+                    </p><br>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="count">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                    <a href="buynow.html">Buy Now</a>
+                </div> 
+            </div>
+          
+ <script src="script.js"></script>
+
+        <section>
+            <body class="bg-green-50 flex-1">
+                <section id="hero">
+                    <div class="container max-w-max bg-green-100  px-12 py-8 md:px-14 shadow">
+                       <nav class="flex items-center gap-7 justify-between  text-white">
+                        <img src="./resources/E-Mandi-logos (1).jpeg" class="h-20 m-2 shadow-md" alt="">
+                            <div class="group">
+                                <a class=" inline-flex justify-center items-center w-40 gap-2    text-black font-semibold rounded-md hover:shadow-lg  text-sm py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="team.html">   
+                                    Our Team
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class=" inline-flex justify-center items-center w-40 gap-2    text-black font-semibold rounded-md hover:shadow-lg  text-sm py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="privacy.html"> 
+                                    copyright
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class=" inline-flex justify-center items-center w-40 gap-2    text-black font-semibold rounded-md hover:shadow-lg  text-sm py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="privacy.html">
+                                    
+                                    Privacy policy
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class=" inline-flex justify-center items-center w-40 gap-2    text-black font-semibold rounded-md hover:shadow-lg  text-sm py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="team.html">
+                                    
+                                    LinkedIn
+                                </a>
+                            </div>
+                            <div class="group">
+                                <a class=" inline-flex justify-center items-center w-40 gap-2    text-black font-semibold rounded-md hover:shadow-lg  text-sm py-1 px-4 dark:text-green-900 dark:hover:border-green-700" href="team.html">
+                                    
+                                    Contact us
+                                </a>
+                            </div>
+                        </div>
+                       </nav> 
+                    </div>
+            
+                </section>
+
+        </section>
+              
+<script>
+    const searchInput = document.getElementById("search-dropdown");
+    const cards = document.querySelectorAll(".card");
+    searchInput.addEventListener("input", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        cards.forEach((card) => {
+            const cardTitle = card.querySelector("h2").textContent.toLowerCase();
+            if (cardTitle.includes(searchTerm)) {
+                card.style.display = "block"; 
+            } else {
+                card.style.display = "none"; 
+            }
+        });
+    });
+</script>
+</body>
+</html>

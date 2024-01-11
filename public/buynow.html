@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="./css/buynow.css">
+</head>
+<body class="bg-green-100">
+    <div >
+    <h1 class="bg-green-100">Buy Now</h1>
+    </div>
+
+   
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Product description goes here.</p>
+        <p>Price: Rs. %</p>
+    </div>
+
+    <br>
+    <div class="address">
+        <h2>Shipping Address</h2>
+        <p>Your current address: <span id="current-address">PICT,Dhankwadi Pune,411043.</span></p>
+    </div>
+    <br>
+    <div class="payment">
+        <h2>Payment Options</h2>
+        <label for="credit-card">Credit Card:</label>
+        <input type="text" id="credit-card" placeholder="Credit Card Number">
+        <br>
+        <label for="expiration">Expiration Date:</label>
+        <input type="text" id="expiration" placeholder="MM/YY">
+        <br>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="CVV">
+        <br>
+        <button id="buy-button">Buy Now</button>
+    </div>
+    <br>
+<div class="delivery">
+    <h2>Expected Delivery</h2>
+    <p>Estimated delivery date: <span id="delivery-date"></span></p>
+</div>
+
+    <script>
+        document.getElementById("change-address").addEventListener("click", function () {
+            var newAddress = prompt("Enter your new shipping address:");
+            if (newAddress) {
+                document.getElementById("current-address").innerText = newAddress;
+            }
+        });
+
+        document.getElementById("buy-button").addEventListener("click", function () {
+            var deliveryDate = new Date();
+            deliveryDate.setDate(deliveryDate.getDate() + 3); // 3 days for delivery
+            document.getElementById("delivery-date").innerText = deliveryDate.toDateString();
+        });
+    </script>
+    <script>
+    var currentDate = new Date();
+    var deliveryDate = new Date(currentDate);
+    deliveryDate.setDate(currentDate.getDate() + 3);
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    var formattedDeliveryDate = deliveryDate.toLocaleDateString('en-US', options);
+    document.getElementById("delivery-date").innerText = formattedDeliveryDate;
+</script>
+</body>
+</html>
+ 

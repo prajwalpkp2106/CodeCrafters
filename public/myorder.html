@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="./css/myorder.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Orders</h1>
+
+        <div class="order">
+            <div class="order-header">
+                <h2>Order #12345</h2>
+                <p>Order Date:<span id="delivery-date"></span></p>
+                <p>Status: Shipped</p>
+            </div>
+            <div class="order-details">
+                <img src="./Vegetable/Cabbage.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h3>Product Name: Cabbage</h3>
+                    <p>Quantity: 2</p>
+                    <p>Price: Rs 50</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="order-header">
+                <h2>Order #67890</h2>
+                <p>Order Date:<span id="delivery-date"></span></p>
+                <p>Status: Delivered</p>
+            </div>
+            <div class="order-details">
+                <img src="./Fruits/Apple.jpeg" alt="Product 2">
+                <div class="product-info">
+                    <h3>Product Name: Apple</h3>
+                    <p>Quantity: 1</p>
+                    <p>Price: Rs 80</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var currentDate = new Date();
+        var deliveryDate = new Date(currentDate);
+        deliveryDate.setDate(currentDate.getDate() + 3);
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDeliveryDate = deliveryDate.toLocaleDateString('en-US', options);
+        document.getElementById("delivery-date").innerText = formattedDeliveryDate;
+    </script>
+</body>
+</html>
