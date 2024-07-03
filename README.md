@@ -29,7 +29,7 @@ This project is a front-end website built using HTML, CSS, JavaScript, and Tailw
 This project can be used to visualize and manage the agricultural supply chain effectively. It provides real-time data and insights to optimize the processes.
 
 ## Screenshots
-![Screenshot 1](Screenshot(621).png)
+![Screenshot 1](Screenshot (621).png)
 ![Screenshot 2](Screenshot(622).png)
 ![Screenshot 1](Screenshot(621).png)
 ![Screenshot 2](Screenshot(622).png)
