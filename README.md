@@ -31,7 +31,8 @@ This project can be used to visualize and manage the agricultural supply chain e
 ## Screenshots
 ![Screenshot 1](Screenshot(621).png)
 ![Screenshot 2](Screenshot(622).png)
+![Screenshot 1](Screenshot(621).png)
+![Screenshot 2](Screenshot(622).png)
 <img src="Screenshot(621).png" alt="Image Description">
 <img src="Screenshot(622).png" alt="Image Description">
-<img src="Screenshot(624).png" alt="Image Description">
-<img src="Screenshot(625).png" alt="Image Description">
+
